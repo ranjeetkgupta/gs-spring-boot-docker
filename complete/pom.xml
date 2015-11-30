@@ -20,6 +20,9 @@
     <properties>
     	<docker.image.prefix>ranjeetkgupta</docker.image.prefix>
         <java.version>1.8</java.version>
+        <build.unknown>local</build.unknown>
+        <build.number>${build.unknown}</build.number>
+        <docker.build.version>${docker.image.prefix}/${project.artifactId}:${build.number}</docker.build.version>
     </properties>
 
     <build>
@@ -47,6 +50,14 @@
 			</plugin>
     <!-- end::plugin[] -->
         </plugins>
+        
+        <resources>
+    <resource>
+        <directory>src/main/resources/version/</directory>
+        <filtering>true</filtering>
+    </resource>
+</resources>
+        
     </build>
 
     <dependencies>
