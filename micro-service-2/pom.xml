@@ -46,7 +46,7 @@
 				
 				<configuration>
 					<imageName>${image.prefix}/${project.artifactId}:v_${build.number}</imageName>
-					<dockerDirectory>complete/src/main/docker</dockerDirectory>
+					<dockerDirectory>micro-service-2/src/main/docker</dockerDirectory>
 					<resources>
 						<resource>
 							<targetPath>/</targetPath>
