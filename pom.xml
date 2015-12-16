@@ -35,7 +35,7 @@
 				<groupId>com.spotify</groupId>
 				<artifactId>docker-maven-plugin</artifactId>
 				<version>0.2.3</version>
-			<!-- 	<configuration>
+				<configuration>
 					<imageName>${image.prefix}/${project.artifactId}:v_${build.number}</imageName>
 					<dockerDirectory>complete/src/main/docker</dockerDirectory>
 					<resources>
@@ -45,7 +45,7 @@
 							<include>${project.build.finalName}.jar</include>
 						</resource>
 					</resources>
-				</configuration> -->
+				</configuration>
 			</plugin>
             
             
