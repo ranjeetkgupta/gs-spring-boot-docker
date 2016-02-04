@@ -14,7 +14,7 @@ public class Application {
 	@RequestMapping("/")
 	public String home() {
 	        Date date = new Date();
-		System.out.println("Microservice 1 invoked !!" + date.toString());
+		System.out.println("Microservice 2 invoked !!" + date.toString());
 		return "Hello Docker World -- MS2 v10 --Demo !!!";
 	}
 
