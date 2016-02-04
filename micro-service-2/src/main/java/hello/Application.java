@@ -5,6 +5,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.bind.RelaxedPropertyResolver;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
+import java.util.Date;
 
 @SpringBootApplication
 @RestController
@@ -12,6 +13,8 @@ public class Application {
 
 	@RequestMapping("/")
 	public String home() {
+	        Date date = new Date();
+		System.out.println("Microservice 1 invoked !!" + date.toString());
 		return "Hello Docker World -- MS2 v10 --Demo !!!";
 	}
 
