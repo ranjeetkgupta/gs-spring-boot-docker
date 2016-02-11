@@ -4,7 +4,12 @@ server:
 #TODO: figure out why I need this here and in bootstrap.yml
 spring:
   application:
-    name: testLatticeApp
+    name: micro-service-1
+  cloud:
+    config:
+      env: prod # optional
+  profiles:
+    active: prod      
 
 ribbon:
   ServerListRefreshInterval: 1000
