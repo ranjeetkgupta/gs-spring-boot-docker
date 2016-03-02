@@ -33,17 +33,21 @@ public class Application {
 	public String home() {
 		Date date = new Date();
 		System.out.println("Microservice 1 invoked !!" + date.toString());
-		
 		StringBuilder builder =  new StringBuilder();
-		
 		builder.append("Hello again ff-cap from Docker -- from microservice 1 \n");
 		builder.append("env variable :: \n");
 		builder.append("poolSize >> " + poolSize + "\n" + "dbUrl >> " + dbUrl + "\n" + "ms2url >> " + ms2Url + "\n" + "rabbitip >> " + rabbitIp);
-		builder.append("Response from urilty microservice >>" + invokeUtilityService(ms2Url));
-		
 		return builder.toString();
 	}
 
+    @RequestMapping("/compose")
+	public String compose() {
+		Date date = new Date();
+		System.out.println("Microservice 1 invoked !!" + date.toString());
+		StringBuilder builder =  new StringBuilder();
+		builder.append("Response from urilty microservice >>" + invokeUtilityService(ms2Url));
+		return builder.toString();
+	}
 
 	public static void main(String[] args) {
 		SpringApplication.run(Application.class, args);
