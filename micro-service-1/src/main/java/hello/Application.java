@@ -29,7 +29,7 @@ public class Application {
 		Date date = new Date();
 		System.out.println("Microservice 1 invoked !!" + date.toString());
 		StringBuilder builder =  new StringBuilder();
-		builder.append("Hello from microservice 1 --3 \n");
+		builder.append("Hello from microservice 1 --4 \n");
 		builder.append("env variable :: \n");
 		builder.append("poolSize >> " + poolSize + "\n" + "dbUrl >> " + dbUrl + "\n" + "ms2url >> " + ms2Url + "\n" + "rabbitip >> " + rabbitIp);
 		return builder.toString();
