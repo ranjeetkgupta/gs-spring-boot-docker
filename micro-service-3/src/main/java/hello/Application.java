@@ -15,7 +15,7 @@ public class Application {
 	public String home() {
 		Date date = new Date();
 		System.out.println("Microservice 3 invoked !!" + date.toString());
-		return "Hello Docker World  -- ms3";
+		return "Hello Docker World  -- ms3- demo prep";
 	}
 
 
